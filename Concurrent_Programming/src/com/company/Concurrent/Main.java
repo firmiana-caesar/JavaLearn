@@ -1,4 +1,5 @@
 package com.company.Concurrent;
+import java.util.*;
 
 public class Main {
 
@@ -9,7 +10,8 @@ public class Main {
 
         Thread[] threads = new Thread[100];
         for (int i = 0; i < threads.length; i++) {
-            threads[i] = new Thread() {
+
+            threads[i] =  new Thread() {
                 public void run() {
                     for (int i = 0; i < 10000; i++) {
                         count++;
